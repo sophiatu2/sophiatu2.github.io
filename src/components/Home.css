@@ -1,0 +1,78 @@
+@import "../index.css";
+
+.home-body {
+  color: var(--text);
+  padding-top: 50px;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.home-social {
+  justify-content: center;
+  padding-top: 15px;
+  display: inline-block;
+  position: relative;
+  padding-inline-start: 0;
+}
+
+.home-social-icons {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 2em;
+  background: rgba(255, 255, 255, 0.972);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.home-social-icons::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--highlight);
+  transition: 0.5s;
+  transform: scale(0.9);
+  z-index: -1;
+}
+
+.home-social-icons:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--highlight);
+}
+
+.home-social-icons:hover {
+  color: var(--highlight);
+  box-shadow: 0 0 5px var(--highlight);
+  text-shadow: 0 0 2px var(--highlight);
+}
+
+.social-icons {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.icon-color {
+  color: var(--darkbg);
+}
+
+.avatar {
+  justify-content: center;
+  padding-top: 9em;
+}
+
+@media (max-width: 767px) {
+  .avatar {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+}
