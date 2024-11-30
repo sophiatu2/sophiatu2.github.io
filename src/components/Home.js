@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import foxblob from "../assets/foxblob.gif";
 import "../index.css";
-import "./Home.css";
 
 function Home() {
   return (

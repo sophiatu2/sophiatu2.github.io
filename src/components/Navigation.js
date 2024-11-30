@@ -9,8 +9,8 @@ import {
   AiOutlineUser,
   AiOutlineFileText,
 } from "react-icons/ai";
+import { BiPalette } from "react-icons/bi";
 import foxblob from "../assets/foxblob.gif";
-import "./Navigation.css";
 
 function Navigation() {
   const [expand, updateExpand] = useState(false);
@@ -54,6 +54,11 @@ function Navigation() {
                 onClick={() => updateExpand(false)}
               >
                 <AiOutlineRocket style={{ marginBottom: "2px" }} /> Projects
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/art" onClick={() => updateExpand(false)}>
+                <BiPalette style={{ marginBottom: "2px" }} /> Art Portfolio
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
