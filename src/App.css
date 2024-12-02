@@ -398,6 +398,10 @@ a:active {
   .project-header h1 {
     padding-right: 8vw;
   }
+
+  .parallax {
+    background-size: 100vh auto;
+  }
 }
 
 /* Parallax scrolling */
@@ -418,6 +422,7 @@ a:active {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
+  margin-bottom: 1.5rem;
 }
 
 .art-image {

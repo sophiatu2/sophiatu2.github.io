@@ -8,21 +8,21 @@ import mirror from "../assets/artwork/Mirror Image 2018 -- Pastel, Acrylic, and 
 import city from "../assets/artwork/My City 2018 -- Charcoal and Pastel on Paper -- 48in x 24in.jpg";
 import phone from "../assets/artwork/Phone Dollhouse 2018 -- Acrylic on Cardboard and Transparent Film with Air-dry Clay -- 9in x 18in.jpeg";
 import self from "../assets/artwork/Self Reflection 2018 -- Pastel on Paper -- 19in x 24in.jpg";
-import flight from "../assets/artwork/Taking Flight 2017 -- Charcoal on Paper with Origami -- 30in x 30in.jpg";
 import stilllife from "../assets/artwork/Childhood and Adulthood 2017 -- Charcoal and Pastel on Paper -- 24in x 19in.JPG";
 import gift from "../assets/artwork/Gift 2018 -- Ink on Paper -- 6in x 8 in.JPG";
+import pumpkin from "../assets/artwork/210912 pumpkin.png";
+import bokoblin from "../assets/artwork/210809 bokoblin rider.png";
 
 const artworks = [
   {
-    src: bees,
-    alt: "Bee Vision 2018 - Oil on Canvas with Wood Structure",
-    caption:
-      "Bee Vision 2018 -- Oil on Canvas with Wood Structure -- 28in x 24in",
+    src: pumpkin,
+    alt: "Mini pumpkin - Digital",
+    caption: "Mini Pumpkin 2021 -- Digital -- 3600px x 3600px",
   },
   {
-    src: city,
-    alt: "My City 2018 - Charcoal and Pastel on Paper",
-    caption: "My City 2018 -- Charcoal and Pastel on Paper -- 48in x 24in",
+    src: bokoblin,
+    alt: "Bokoblin Rider - Digital",
+    caption: "Bokoblin Rider Dream 2021 -- Digital -- 2100px x 1500px",
   },
   {
     src: phone,
@@ -45,12 +45,6 @@ const artworks = [
     src: gift,
     alt: "Gift 2018 - Ink on Paper",
     caption: "Gift 2018 -- Ink on Paper -- 6in x 8 in",
-  },
-  {
-    src: flight,
-    alt: "Taking Flight 2017 - Charcoal on Paper with Origami",
-    caption:
-      "Taking Flight 2017 -- Charcoal on Paper with Origami -- 30in x 30in",
   },
   {
     src: stilllife,
@@ -82,8 +76,33 @@ function Art() {
     <Container className="section">
       <h1 style={{ marginBottom: "24px" }}>Art Portfolio</h1>
       <Row>
+        <Col>
+          <div className="art-card">
+            <img
+              src={city}
+              alt="My City 2018 - Charcoal and Pastel on Paper"
+              className="art-image"
+            />
+            <div className="art-caption">
+              My City 2018 -- Charcoal and Pastel on Paper -- 48in x 24in
+            </div>
+          </div>
+          <div className="art-card">
+            <img
+              src={bees}
+              alt="Bee Vision 2018 - Oil on Canvas with Wood Structure"
+              className="art-image"
+            />
+            <div className="art-caption">
+              Bee Vision 2018 -- Oil on Canvas with Wood Structure -- 28in x
+              24in
+            </div>
+          </div>
+        </Col>
+      </Row>
+      <Row>
         {artworks.map((artwork, index) => (
-          <Col key={index} md={4} className="mb-4">
+          <Col key={index} md={6}>
             <div className="art-card">
               <img src={artwork.src} alt={artwork.alt} className="art-image" />
               <div className="art-caption">{artwork.caption}</div>
