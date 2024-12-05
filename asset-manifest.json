@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.65958b99.chunk.css",
-    "main.js": "/static/js/main.aaedddfc.chunk.js",
-    "main.js.map": "/static/js/main.aaedddfc.chunk.js.map",
+    "main.css": "/static/css/main.61b9485a.chunk.css",
+    "main.js": "/static/js/main.c1e4388c.chunk.js",
+    "main.js.map": "/static/js/main.c1e4388c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3388f3cb.js",
     "runtime-main.js.map": "/static/js/runtime-main.3388f3cb.js.map",
     "static/css/2.88761f2b.chunk.css": "/static/css/2.88761f2b.chunk.css",
@@ -10,8 +10,11 @@
     "static/js/2.50c4fef6.chunk.js.map": "/static/js/2.50c4fef6.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.88761f2b.chunk.css.map": "/static/css/2.88761f2b.chunk.css.map",
-    "static/css/main.65958b99.chunk.css.map": "/static/css/main.65958b99.chunk.css.map",
+    "static/css/main.61b9485a.chunk.css.map": "/static/css/main.61b9485a.chunk.css.map",
     "static/js/2.50c4fef6.chunk.js.LICENSE.txt": "/static/js/2.50c4fef6.chunk.js.LICENSE.txt",
+    "static/media/200304 procrastination.2a89ef95.png": "/static/media/200304 procrastination.2a89ef95.png",
+    "static/media/200629 Luci -- Watercolor.e6f1354c.png": "/static/media/200629 Luci -- Watercolor.e6f1354c.png",
+    "static/media/200701 Bonnie -- Watercolor.6e325832.png": "/static/media/200701 Bonnie -- Watercolor.6e325832.png",
     "static/media/210809 bokoblin rider.e8f1a080.png": "/static/media/210809 bokoblin rider.e8f1a080.png",
     "static/media/210912 pumpkin.a0e53284.png": "/static/media/210912 pumpkin.a0e53284.png",
     "static/media/Bee Vision 2018 -- Oil on Canvas with Wood Structure -- 28in x 24in.b531206c.jpg": "/static/media/Bee Vision 2018 -- Oil on Canvas with Wood Structure -- 28in x 24in.b531206c.jpg",
@@ -27,6 +30,7 @@
     "static/media/development-screenshot.02601b3c.png": "/static/media/development-screenshot.02601b3c.png",
     "static/media/foxblob.2d45c602.gif": "/static/media/foxblob.2d45c602.gif",
     "static/media/iterativedesign-screenshot.666aaff8.png": "/static/media/iterativedesign-screenshot.666aaff8.png",
+    "static/media/me_blob.d8caa87c.png": "/static/media/me_blob.d8caa87c.png",
     "static/media/App.css": "/static/media/parallax.0b88b99c.gif",
     "static/media/pvdx_figma.fe89ca98.png": "/static/media/pvdx_figma.fe89ca98.png",
     "static/media/redesign-screenshot.0761c615.png": "/static/media/redesign-screenshot.0761c615.png",
@@ -36,7 +40,7 @@
     "static/js/runtime-main.3388f3cb.js",
     "static/css/2.88761f2b.chunk.css",
     "static/js/2.50c4fef6.chunk.js",
-    "static/css/main.65958b99.chunk.css",
-    "static/js/main.aaedddfc.chunk.js"
+    "static/css/main.61b9485a.chunk.css",
+    "static/js/main.c1e4388c.chunk.js"
   ]
 }
