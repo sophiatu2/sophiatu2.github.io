@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.e93373e0.chunk.css",
-    "main.js": "/static/js/main.767d4147.chunk.js",
-    "main.js.map": "/static/js/main.767d4147.chunk.js.map",
+    "main.js": "/static/js/main.92926e8e.chunk.js",
+    "main.js.map": "/static/js/main.92926e8e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3388f3cb.js",
     "runtime-main.js.map": "/static/js/runtime-main.3388f3cb.js.map",
     "static/css/2.88761f2b.chunk.css": "/static/css/2.88761f2b.chunk.css",
@@ -44,7 +44,7 @@
     "static/media/playgameworks.c35e126a.png": "/static/media/playgameworks.c35e126a.png",
     "static/media/pvdx_figma.fe89ca98.png": "/static/media/pvdx_figma.fe89ca98.png",
     "static/media/redesign-screenshot.0761c615.png": "/static/media/redesign-screenshot.0761c615.png",
-    "static/media/resume.bfdd9126.pdf": "/static/media/resume.bfdd9126.pdf",
+    "static/media/resume.963044be.pdf": "/static/media/resume.963044be.pdf",
     "static/media/television.fa38ffac.png": "/static/media/television.fa38ffac.png",
     "static/media/williamblair.e33ffd40.png": "/static/media/williamblair.e33ffd40.png"
   },
@@ -53,6 +53,6 @@
     "static/css/2.88761f2b.chunk.css",
     "static/js/2.be8aa1de.chunk.js",
     "static/css/main.e93373e0.chunk.css",
-    "static/js/main.767d4147.chunk.js"
+    "static/js/main.92926e8e.chunk.js"
   ]
 }
