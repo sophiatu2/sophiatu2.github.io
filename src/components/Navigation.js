@@ -10,16 +10,16 @@ import {
   AiOutlineFileText,
 } from "react-icons/ai";
 import { BiPalette } from "react-icons/bi";
-import foxblob from "../assets/foxblob.gif";
+import meblob from "../assets/me_blob.png";
 
 function Navigation() {
   const [expand, updateExpand] = useState(false);
 
   return (
     <Navbar expanded={expand} fixed="top" expand="md" className="navbar">
-      <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src={foxblob} className="img-fluid logo" alt="logo" />
+      <Container fluid className="nav-container">
+        <Navbar.Brand href="/">
+          <img src={meblob} className="logo" alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -59,15 +59,6 @@ function Navigation() {
             <Nav.Item>
               <Nav.Link as={Link} to="/art" onClick={() => updateExpand(false)}>
                 <BiPalette style={{ marginBottom: "2px" }} /> Art Portfolio
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpand(false)}
-              >
-                <AiOutlineFileText style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
           </Nav>

@@ -1,8 +1,9 @@
 :root {
-  --bg: #1d2033;
-  --darkbg: #121216;
+  --bg: #232e52;
+  --darkbg: #131525;
+  --black: #131516;
   --highlight: #70d4ff;
   --pop: #00abf5;
-  --text: #ffffff;
+  --text: #f5f5f5;
   --shadow: rgba(0, 0, 0, 0.2);
 }

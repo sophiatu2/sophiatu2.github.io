@@ -1,10 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCard";
 import foxBlob from "../assets/foxblob.gif";
-import pvdxScreenshot from "../assets/pvdx_figma.png";
-import redesignScreenshot from "../assets/redesign-screenshot.png";
-import iterativeScreenshot from "../assets/iterativedesign-screenshot.png";
-import developmentScreenshot from "../assets/development-screenshot.png";
+import pvdxScreenshot from "../assets/screenshots/pvdx_figma.png";
+import redesignScreenshot from "../assets/screenshots/redesign-screenshot.png";
+import iterativeScreenshot from "../assets/screenshots/iterativedesign-screenshot.png";
+import developmentScreenshot from "../assets/screenshots/development-screenshot.png";
 import "../index.css";
 
 function Projects() {
