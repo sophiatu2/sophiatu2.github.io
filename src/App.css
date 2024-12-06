@@ -33,7 +33,6 @@ p {
 
 a:link {
   text-decoration: none;
-  color: var(--pop);
 }
 
 a:visited {
@@ -52,7 +51,7 @@ a:active {
 .page {
   position: relative;
   align-items: center;
-  margin: 8rem 0 4rem 0;
+  margin: 8rem auto 4rem auto;
   color: var(--text);
 }
 
