@@ -12,7 +12,7 @@ body {
 
 h1 {
   color: var(--text);
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-bottom: 1rem;
 }
 
@@ -51,14 +51,14 @@ a:active {
 .page {
   position: relative;
   align-items: center;
-  margin: 8rem auto 4rem auto;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
   color: var(--text);
 }
 
 .section {
   color: var(--text);
   margin-top: 4rem;
-  justify-content: center;
 }
 
 .custom-button {
@@ -449,7 +449,8 @@ a:active {
 }
 
 .display {
-  margin: 2rem 0 4rem 0;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
   text-align: center;
   color: var(--text);
 }
@@ -540,6 +541,10 @@ a:active {
 
 .about-section p {
   text-align: left;
+}
+
+.skills-section {
+  justify-content: center;
 }
 
 .skill-block {

@@ -45,7 +45,7 @@ function About() {
         </Col>
         <Col md={6} className="about-column">
           <h1>Skills</h1>
-          <Row className="section">
+          <Row className="skills-section">
             <Col xs={4} md={3} className="skill-block">
               <FaPython className="skill-icon" />
               Python
