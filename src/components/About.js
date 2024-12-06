@@ -29,12 +29,12 @@ function About() {
           </Link>
           .
         </p>
+        <button className="custom-button" href={pdf} download>
+          <AiOutlineDownload />
+          &nbsp;Download Resume
+        </button>
       </div>
       <h1>Experience</h1>
-      <button className="custom-button" href={pdf} download>
-        <AiOutlineDownload />
-        &nbsp;Download Resume
-      </button>
       <Timeline />
       <div className="timeline-brown">
         <div className="timeline-content">
