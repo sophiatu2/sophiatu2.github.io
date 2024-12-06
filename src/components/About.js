@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AiOutlineDownload } from "react-icons/ai";
 import Timeline from "./Timeline";
@@ -33,6 +33,15 @@ function About() {
           <AiOutlineDownload />
           &nbsp;Download Resume
         </button>
+      </div>
+      <div className="about-section">
+        <h1>Skills</h1>
+        <Row className="section">
+          <Col md={4}>WOOOO</Col>
+          <Col md={4}>WOOOO</Col>
+          <Col md={4}>WOOOO</Col>
+          <Col md={4}>WOOOO</Col>
+        </Row>
       </div>
       <h1>Experience</h1>
       <Timeline />

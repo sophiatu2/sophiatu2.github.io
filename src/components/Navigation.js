@@ -3,12 +3,7 @@ import { Link } from "react-router-dom";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
-import {
-  AiOutlineHome,
-  AiOutlineRocket,
-  AiOutlineUser,
-  AiOutlineFileText,
-} from "react-icons/ai";
+import { AiOutlineHome, AiOutlineRocket, AiOutlineUser } from "react-icons/ai";
 import { BiPalette } from "react-icons/bi";
 import meblob from "../assets/me_blob.png";
 
