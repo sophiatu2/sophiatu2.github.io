@@ -59,6 +59,7 @@ a:active {
 .section {
   color: var(--text);
   margin-top: 4rem;
+  justify-content: center;
 }
 
 .custom-button {
@@ -533,10 +534,38 @@ a:active {
 /* About */
 
 .about-section {
-  padding: 0 20vw;
+  padding: 0 10vw;
   margin-bottom: 2rem;
-  align-items: center;
   justify-content: center;
+}
+
+.about-section p {
+  text-align: left;
+}
+
+.skill-block {
+  font-size: 1rem;
+  margin: 2rem 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--highlight);
+  border-radius: 4px;
+  aspect-ratio: 1;
+  box-shadow: 0 4px 8px var(--shadow);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.skill-block:hover {
+  box-shadow: 0 0 8px var(--highlight);
+}
+
+.skill-icon {
+  font-size: 5rem;
+  margin-bottom: 0.5rem;
 }
 
 .about-link {
@@ -584,7 +613,7 @@ a:active {
   border-radius: 8px;
   padding: 1rem;
   position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px var(--shadow);
 }
 
 .timeline-text {
@@ -647,6 +676,14 @@ a:active {
 @media (max-width: 768px) {
   .about-section {
     padding: 0 10vw;
+  }
+
+  .about-column {
+    margin-bottom: 2rem;
+  }
+
+  .skill-block {
+    margin: 1rem 0.5rem;
   }
 
   .timeline {

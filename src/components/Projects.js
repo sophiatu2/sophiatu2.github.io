@@ -1,4 +1,4 @@
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { AiOutlineDownload } from "react-icons/ai";
 import ProjectCard from "./ProjectCard";
 import foxBlob from "../assets/foxblob.gif";
