@@ -33,6 +33,7 @@ p {
 
 a:link {
   text-decoration: none;
+  color: var(--pop);
 }
 
 a:visited {
@@ -70,6 +71,7 @@ a:active {
   line-height: 20px;
   outline: none;
   padding: 0.5rem 1rem;
+  margin-right: 1rem;
   text-align: center;
   text-decoration: none;
   transition: color 100ms;
