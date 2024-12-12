@@ -48,6 +48,11 @@ a:active {
   text-decoration: none;
 }
 
+.link-wrapper {
+  text-decoration: none;
+  color: var(--text);
+}
+
 .page {
   position: relative;
   align-items: center;
