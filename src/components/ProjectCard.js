@@ -3,7 +3,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 function Card({ title, img, link, desc, skills, other }) {
   return (
-    <a className="link-wrapper" href={link} target="_blank">
+    <a className="link-wrapper" href={link} target="_blank" rel="noreferrer">
       <div className="project-card">
         <img src={img} alt={"Project screenshot"} />
         <div className="project-card-content">
@@ -12,7 +12,12 @@ function Card({ title, img, link, desc, skills, other }) {
           <p>
             <b>Skills:</b> {skills}
           </p>
-          <button className="custom-button" href={link} target="_blank">
+          <button
+            className="custom-button"
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillGithub /> See on github
           </button>
           {other}
