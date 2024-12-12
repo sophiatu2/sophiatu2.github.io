@@ -53,6 +53,12 @@ a:active {
   color: var(--text);
 }
 
+.link-wrapper:hover,
+.link-wrapper:active {
+  text-decoration: none;
+  color: var(--text);
+}
+
 .page {
   position: relative;
   align-items: center;
