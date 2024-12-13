@@ -239,7 +239,7 @@ a:active {
 /* Footer */
 
 .footer {
-  background-color: var(--black);
+  background-color: var(--footer);
   bottom: 0;
   padding: 0.5rem 0;
 }
@@ -419,7 +419,7 @@ a:active {
   display: flex;
   align-items: center;
   text-align: left;
-  background-color: var(--black);
+  background-color: var(--card);
   border-radius: 8px;
   transition: box-shadow 0.5s ease-out;
   overflow: hidden;
@@ -615,7 +615,7 @@ a:active {
   top: -2rem; /* Same as padding so it connects to the item before and after it */
   bottom: -2rem; /* Same as padding so it connects to the item before and after it */
   width: 4px;
-  background-color: var(--highlight);
+  background-color: var(--pop);
 }
 
 .timeline-item:first-child::before {
@@ -635,13 +635,13 @@ a:active {
   top: 50%;
   height: 4px;
   width: 5%;
-  background-color: var(--highlight);
+  background-color: var(--pop);
 }
 
 .timeline-content {
   display: flex;
   align-items: center;
-  background-color: var(--black);
+  background-color: var(--card);
   border-radius: 8px;
   padding: 1rem;
   position: relative;
