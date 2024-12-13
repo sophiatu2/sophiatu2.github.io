@@ -87,8 +87,8 @@ a:active {
   margin: 0.5rem;
   text-align: center;
   text-decoration: none;
-  transition: color 0.3 ease-in-out;
-  transition: background-color 0.3 ease-in-out;
+  transition: color 0.3 ease-out;
+  transition: background-color 0.3 ease-out;
   touch-action: manipulation;
 }
 
@@ -298,7 +298,7 @@ a:active {
   line-height: 2em;
   background: rgba(255, 255, 255, 0.972);
   border-radius: 50%;
-  transition: 0.5s;
+  transition: 0.5s ease-out;
 }
 
 .home-social-icons::before {
@@ -310,7 +310,7 @@ a:active {
   height: 100%;
   border-radius: 50%;
   background: var(--pop);
-  transition: 0.5s;
+  transition: 0.5s ease-out;
   transform: scale(0.9);
   z-index: -1;
 }
@@ -421,7 +421,7 @@ a:active {
   text-align: left;
   background-color: var(--black);
   border-radius: 8px;
-  transition: all 0.5s ease-in-out;
+  transition: box-shadow 0.5s ease-out;
   overflow: hidden;
   margin: 4vh auto;
   padding: 2rem;
@@ -510,21 +510,32 @@ a:active {
 
 /* Art */
 
+.art-page {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 10vw 4rem 10vw;
+  color: var(--text);
+}
+
 .art-card {
   position: relative;
+  width: 100%;
   overflow: hidden;
   border-radius: 8px;
   margin-bottom: 1.5rem;
+  transition: all 0.5s ease-out;
 }
 
 .art-image {
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-out;
 }
 
-.art-card:hover .artwork-image {
+.art-card:hover .art-image {
+  cursor: pointer;
   transform: scale(1.1);
 }
 
@@ -543,6 +554,17 @@ a:active {
 
 .art-card:hover .art-caption {
   transform: translateY(0);
+}
+
+.art-card.expanded {
+  width: 100vw;
+  z-index: 10;
+  margin: 0 -10vw 1.5rem -10vw;
+  border-radius: 0;
+}
+
+.art-card.expanded .art-image {
+  transform: scale(1.1);
 }
 
 /* About */
@@ -565,34 +587,6 @@ a:active {
   height: 100%;
   object-fit: cover;
   border-radius: 8px;
-}
-
-.skills-section {
-  margin-bottom: 2rem;
-  justify-content: left;
-}
-
-.skill-block {
-  font-size: 1rem;
-  margin: 2rem 1rem;
-  padding: 0.5rem;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid var(--highlight);
-  border-radius: 4px;
-  aspect-ratio: 1;
-  box-shadow: 0 4px 8px var(--shadow);
-  overflow: hidden;
-  transition: all 0.3s ease 0s;
-}
-
-.skill-block:hover {
-  box-shadow: 0 0 8px var(--highlight);
-}
-
-.skill-icon {
-  font-size: 5rem;
-  margin-bottom: 0.5rem;
 }
 
 .about-link {
@@ -652,7 +646,7 @@ a:active {
   padding: 1rem;
   position: relative;
   box-shadow: 0 4px 8px var(--shadow);
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
 .timeline-content:hover {
@@ -793,7 +787,7 @@ select option {
   margin: 16px 4px 0 4px;
   text-align: center;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
+  transition: box-shadow 0.3 ease-out;
   touch-action: manipulation;
 }
 

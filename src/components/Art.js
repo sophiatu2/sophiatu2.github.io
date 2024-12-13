@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { useState } from "react";
+import { Row, Col } from "react-bootstrap";
 import bees from "../assets/artwork/Bee Vision 2018 -- Oil on Canvas with Wood Structure -- 28in x 24in.jpg";
 import perspective from "../assets/artwork/From Different Perspectives 2017 -- Charcoal on Paper -- 48in x 66in.jpg";
 import tiger from "../assets/artwork/Furious 2017 -- Ink on Paper -- 5.5 x 8.5in.jpg";
@@ -17,6 +18,17 @@ import bonnie from "../assets/artwork/200701 Bonnie -- Watercolor.png";
 import expo from "../assets/artwork/200304 procrastination.png";
 
 const artworks = [
+  {
+    src: city,
+    alt: "My City 2018 - Charcoal and Pastel on Paper",
+    caption: "My City 2018 - Charcoal and Pastel on Paper - 48in x 24in",
+  },
+  {
+    src: bees,
+    alt: "Bee Vision 2018 - Oil on Canvas with Wood Structure",
+    caption:
+      "Bee Vision 2018 - Oil on Canvas with Wood Structure - 28in x 24in",
+  },
   {
     src: pumpkin,
     alt: "Mini pumpkin - Digital",
@@ -40,7 +52,12 @@ const artworks = [
   {
     src: expo,
     alt: "Inspiration - Digital",
-    caption: "Inspiration - Digital 550px x 550px",
+    caption: "Inspiration 2020 - Digital 550px x 550px",
+  },
+  {
+    src: gift,
+    alt: "Gift 2018 - Ink on Paper",
+    caption: "Gift 2018 - Ink on Paper - 6in x 8 in",
   },
   {
     src: mirror,
@@ -53,11 +70,6 @@ const artworks = [
     alt: "Phone Dollhouse 2018 - Acrylic on Cardboard and Transparent Film with Air-dry Clay",
     caption:
       "Phone Dollhouse 2018 - Acrylic on Cardboard and Transparent Film with Air-dry Clay - 9in x 18in",
-  },
-  {
-    src: gift,
-    alt: "Gift 2018 - Ink on Paper",
-    caption: "Gift 2018 - Ink on Paper - 6in x 8 in",
   },
   {
     src: self,
@@ -90,44 +102,31 @@ const artworks = [
 ];
 
 function Art() {
+  const [expandedImg, setExpandedImg] = useState(null);
+
+  const handleCardClick = (index) => {
+    setExpandedImg(expandedImg === index ? null : index);
+  };
+
   return (
-    <Container className="page">
-      <Row className="section">
+    <div className="art-page">
+      <Row>
         <h1 style={{ marginBottom: "24px" }}>Art Portfolio</h1>
-        <Col>
-          <div className="art-card">
-            <img
-              src={city}
-              alt="My City 2018 - Charcoal and Pastel on Paper"
-              className="art-image"
-            />
-            <div className="art-caption">
-              My City 2018 - Charcoal and Pastel on Paper - 48in x 24in
-            </div>
-          </div>
-          <div className="art-card">
-            <img
-              src={bees}
-              alt="Bee Vision 2018 - Oil on Canvas with Wood Structure"
-              className="art-image"
-            />
-            <div className="art-caption">
-              Bee Vision 2018 - Oil on Canvas with Wood Structure - 28in x 24in
-            </div>
-          </div>
-        </Col>
       </Row>
       <Row>
         {artworks.map((artwork, index) => (
-          <Col key={index} md={6}>
-            <div className="art-card">
+          <Col key={index} md={expandedImg === index ? 12 : 6}>
+            <div
+              className={`art-card ${expandedImg === index ? "expanded" : ""}`}
+              onClick={() => handleCardClick(index)}
+            >
               <img src={artwork.src} alt={artwork.alt} className="art-image" />
               <div className="art-caption">{artwork.caption}</div>
             </div>
           </Col>
         ))}
       </Row>
-    </Container>
+    </div>
   );
 }
 
