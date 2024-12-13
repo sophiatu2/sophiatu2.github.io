@@ -61,6 +61,7 @@ a:active {
 
 .page {
   position: relative;
+  justify-content: center;
   align-items: center;
   margin-top: 8rem;
   margin-bottom: 4rem;
@@ -350,7 +351,7 @@ a:active {
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin: 4rem 0;
+  margin: 4rem auto;
 }
 
 .image-link {
@@ -545,6 +546,7 @@ a:active {
 /* About */
 
 .about-section {
+  display: flex;
   padding: 0 10vw;
   margin-bottom: 2rem;
   justify-content: center;
@@ -590,91 +592,74 @@ a:active {
 
 .timeline {
   position: relative;
-  padding: 2rem;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 4px;
-  background-color: var(--highlight);
-  transform: translateX(-50%);
+  margin-left: 2rem;
+  width: 80%;
+  max-width: 1200px;
 }
 
 .timeline-item {
+  align-items: center;
   position: relative;
-  width: 45%;
-  padding: 1rem 0;
-}
-
-.timeline-item.left {
-  left: 0;
-  text-align: right;
-}
-
-.timeline-item.right {
-  left: 55%;
+  margin: 2rem auto;
   text-align: left;
+}
+
+/* Connector between timeline-items */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -5%;
+  top: -2rem; /* Same as padding so it connects to the item before and after it */
+  bottom: -2rem; /* Same as padding so it connects to the item before and after it */
+  width: 4px;
+  background-color: var(--highlight);
+}
+
+.timeline-item:first-child::before {
+  top: 50%;
+  bottom: 0;
+}
+
+.timeline-item:last-child::before {
+  top: 0;
+  bottom: 50%;
+}
+
+/* Connector line from timeline to timeline-item */
+.line-connector {
+  position: absolute;
+  left: -5%;
+  top: 50%;
+  height: 4px;
+  width: 5%;
+  background-color: var(--highlight);
 }
 
 .timeline-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: var(--black);
   border-radius: 8px;
   padding: 1rem;
   position: relative;
   box-shadow: 0 4px 8px var(--shadow);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.timeline-content:hover {
+  box-shadow: 0 0 8px var(--highlight);
 }
 
 .timeline-text {
-  flex: 1;
   margin: 0 1rem;
 }
 
-.company-logo {
+.timeline-content .company-logo {
   width: 6rem;
-  margin-bottom: 10px;
-}
-
-.left-logo {
-  margin-left: 1rem;
-}
-
-.right-logo {
-  margin-right: 1rem;
-}
-
-.timeline-item.left .line-connector {
-  position: absolute;
-  top: 50%;
-  right: -11%;
-  height: 4px;
-  width: 11%;
-  background-color: var(--highlight);
-}
-
-.timeline-item.right .line-connector {
-  position: absolute;
-  top: 50%;
-  left: -11%;
-  height: 4px;
-  width: 11%;
-  background-color: var(--highlight);
-}
-
-.timeline-content h3 {
-  margin: 0.5rem 0 0;
 }
 
 .timeline-content h4 {
-  margin: 0.3rem 0;
   font-weight: 400;
-  color: var(--text-light);
 }
 
 .timeline-content p {
@@ -683,16 +668,7 @@ a:active {
   color: var(--text-light);
 }
 
-.timeline-brown {
-  display: flex;
-  justify-content: center;
-}
-
 @media (max-width: 768px) {
-  .about-section {
-    padding: 0 10vw;
-  }
-
   .about-column {
     margin-bottom: 2rem;
   }
@@ -702,39 +678,29 @@ a:active {
   }
 
   .timeline {
-    width: 100%;
-  }
-
-  .timeline-item.left,
-  .timeline-item.right {
-    left: 0;
-    width: 100%;
-    text-align: left;
-  }
-
-  .timeline-item.left .line-connector,
-  .timeline-item.right .line-connector {
-    display: none;
+    margin: 0 auto;
   }
 
   .timeline::before {
     display: none;
   }
 
-  .timeline-content .company-logo {
-    order: 1;
-    margin-left: 0;
-    margin-right: 1rem;
-  }
-
-  .timeline-content .timeline-text {
-    order: 2;
-  }
-
-  .timeline-brown {
-    width: 100%;
+  .timeline-item {
     display: block;
-    padding: 0 2rem;
+    width: 100%;
     text-align: left;
+    margin: 2rem auto;
+  }
+
+  .timeline-item::before {
+    display: none;
+  }
+
+  .line-connector {
+    display: none;
+  }
+
+  .timeline-content .company-logo {
+    margin: 0 1rem;
   }
 }

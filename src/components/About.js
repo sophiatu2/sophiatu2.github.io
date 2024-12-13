@@ -7,7 +7,6 @@ import { RiFileExcel2Fill } from "react-icons/ri";
 import { SiPowerbi, SiMysql } from "react-icons/si";
 import Timeline from "./Timeline";
 import pdf from "../assets/resume.pdf";
-import brown from "../assets/logos/brown.png";
 
 function About() {
   return (
@@ -83,17 +82,9 @@ function About() {
         <AiOutlineDownload />
         &nbsp;Download Resume
       </button>
-      <Timeline />
-      <div className="timeline-brown">
-        <div className="timeline-content">
-          <img src={brown} alt="Company Logo" className="company-logo" />
-          <div className="timeline-text">
-            <h3>Student</h3>
-            <h4>Brown University</h4>
-            <p>Sep 2019 - May 2023</p>
-          </div>
-        </div>
-      </div>
+      <Row className="about-section">
+        <Timeline />
+      </Row>
     </Container>
   );
 }
