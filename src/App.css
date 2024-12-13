@@ -620,11 +620,11 @@ a:active {
 
 .timeline-item:first-child::before {
   top: 50%;
-  bottom: 0;
+  bottom: -10%;
 }
 
 .timeline-item:last-child::before {
-  top: 0;
+  top: -10%;
   bottom: 50%;
 }
 
