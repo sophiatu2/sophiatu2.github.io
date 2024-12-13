@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { AiFillCaretDown } from "react-icons/ai";
 import TimelineCard from "./TimelineCard";
 import Filters from "./Filters";
 
@@ -35,6 +36,9 @@ function Timeline() {
 
   return (
     <div className="section">
+      <div style={{ marginTop: "2rem" }}>
+        Filter / Sort <AiFillCaretDown />
+      </div>
       <Filters data={experiences} setFilteredItems={setFilteredItems} />
       <div className="timeline">
         {filteredItems.map((item, index) => (

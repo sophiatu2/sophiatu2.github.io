@@ -117,7 +117,7 @@ a:active {
 
 .navbar-toggler span {
   display: block;
-  background-color: var(--highlight);
+  background-color: var(--text);
   height: 4px;
   width: 27px;
   margin-top: 5px;
@@ -723,17 +723,13 @@ a:active {
 .filters {
   justify-content: left;
   text-align: left;
-  margin-top: 2rem;
 }
 
 .buttons-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-
-select .custom-button {
-  text-align: left;
+  justify-content: center;
 }
 
 select option {
@@ -786,4 +782,30 @@ h4 {
   border: none;
   padding: 8px;
   color: var(--text);
+}
+
+.filter-button {
+  color: var(--text);
+  background-color: var(--darkbg);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+  padding: 4px 8px;
+  margin: 16px 4px 0 4px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+  touch-action: manipulation;
+}
+
+.filter-button:hover {
+  box-shadow: 0 0 8px var(--highlight);
+}
+
+@media (max-width: 768px) {
+  .cat-button label span {
+    margin: 4px;
+  }
 }

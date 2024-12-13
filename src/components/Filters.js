@@ -1,6 +1,5 @@
 import React from "react";
-import { AiFillCaretDown } from "react-icons/ai";
-import { FaReact, FaPython, FaDocker } from "react-icons/fa";
+import { FaReact, FaPython } from "react-icons/fa";
 import { RiFileExcel2Fill } from "react-icons/ri";
 import { FiFigma } from "react-icons/fi";
 import { SiPowerbi, SiJavascript, SiTensorflow } from "react-icons/si";
@@ -108,35 +107,6 @@ export default function Filters({ data, setFilteredItems }) {
 
   return (
     <div className="filters">
-      <div style={{ margin: "0.5rem" }}>
-        Filter / Sort <AiFillCaretDown />
-      </div>
-      <div>
-        <select
-          onChange={(e) => {
-            changeSort(e.target.value);
-          }}
-          className="custom-button"
-          aria-label="Sort By"
-        >
-          <option value="default">Default sort</option>
-          <option value="startyear">Start date</option>
-          <option value="endyear">End date</option>
-          <option value="duration">Duration</option>
-        </select>
-        <button className="custom-button" onClick={toggleSortOrder}>
-          Order: {sortOrder === "asc" ? "Ascending" : "Descending"}
-        </button>
-        <button className="custom-button" onClick={(event) => selectAll(event)}>
-          Select All
-        </button>
-        <button
-          className="custom-button"
-          onClick={(event) => selectNone(event)}
-        >
-          Deselect All
-        </button>
-      </div>
       <form>
         <div className="buttons-container">
           {categoriesArr.map((item) => (
@@ -159,6 +129,32 @@ export default function Filters({ data, setFilteredItems }) {
           ))}
         </div>
       </form>
+      <div className="buttons-container">
+        <select
+          onChange={(e) => {
+            changeSort(e.target.value);
+          }}
+          className="filter-button"
+          aria-label="Sort By"
+        >
+          <option value="default">Default sort</option>
+          <option value="startyear">Start date</option>
+          <option value="endyear">End date</option>
+          <option value="duration">Duration</option>
+        </select>
+        <button className="filter-button" onClick={toggleSortOrder}>
+          Order: {sortOrder === "asc" ? "Ascending" : "Descending"}
+        </button>
+        <button className="filter-button" onClick={(event) => selectAll(event)}>
+          Select All
+        </button>
+        <button
+          className="filter-button"
+          onClick={(event) => selectNone(event)}
+        >
+          Deselect All
+        </button>
+      </div>
     </div>
   );
 }
