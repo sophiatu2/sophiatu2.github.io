@@ -35,8 +35,8 @@ function Timeline() {
   const [filteredItems, setFilteredItems] = useState(experienceData);
 
   return (
-    <div className="section">
-      <div style={{ marginTop: "2rem" }}>
+    <div>
+      <div>
         Filter / Sort <AiFillCaretDown />
       </div>
       <Filters data={experiences} setFilteredItems={setFilteredItems} />

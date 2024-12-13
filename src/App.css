@@ -13,6 +13,7 @@ body {
 h1 {
   color: var(--text);
   font-size: 2.5rem;
+  font-weight: 500;
   padding-bottom: 1rem;
 }
 
@@ -549,7 +550,7 @@ a:active {
 .about-section {
   display: flex;
   padding: 0 10vw;
-  margin-bottom: 2rem;
+  margin: 2rem auto;
   justify-content: center;
   align-items: stretch;
 }
@@ -734,10 +735,6 @@ a:active {
 
 select option {
   font-size: 14px;
-}
-
-h4 {
-  margin: 1.5rem 0 1rem 0;
 }
 
 .cat-button label span {
