@@ -7,7 +7,7 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row>
-        <Col xs="6" md="6" classname="footer-name">
+        <Col xs="6" md="6" className="footer-name">
           <h3>Sophia Tu 2024</h3>
         </Col>
         <Col xs="6" md="6" className="footer-links">
