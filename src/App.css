@@ -86,7 +86,8 @@ a:active {
   margin: 0.5rem;
   text-align: center;
   text-decoration: none;
-  transition: color 100ms;
+  transition: color 0.3 ease-in-out;
+  transition: background-color 0.3 ease-in-out;
   touch-action: manipulation;
 }
 
@@ -550,22 +551,30 @@ a:active {
   padding: 0 10vw;
   margin-bottom: 2rem;
   justify-content: center;
+  align-items: stretch;
 }
 
 .about-section p {
   text-align: left;
 }
 
+.about-column img {
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 .skills-section {
-  justify-content: center;
+  margin-bottom: 2rem;
+  justify-content: left;
 }
 
 .skill-block {
   font-size: 1rem;
   margin: 2rem 1rem;
   padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid var(--highlight);
@@ -593,7 +602,6 @@ a:active {
 .timeline {
   position: relative;
   margin-left: 2rem;
-  width: 80%;
   max-width: 1200px;
 }
 
@@ -656,6 +664,7 @@ a:active {
 
 .timeline-content .company-logo {
   width: 6rem;
+  margin: 0 1rem;
 }
 
 .timeline-content h4 {
@@ -669,6 +678,11 @@ a:active {
 }
 
 @media (max-width: 768px) {
+  .about-section {
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
   .about-column {
     margin-bottom: 2rem;
   }
@@ -701,6 +715,75 @@ a:active {
   }
 
   .timeline-content .company-logo {
-    margin: 0 1rem;
+    margin: 0;
   }
+}
+
+/* Filters */
+.filters {
+  justify-content: left;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+select .custom-button {
+  text-align: left;
+}
+
+select option {
+  font-size: 14px;
+}
+
+h4 {
+  margin: 1.5rem 0 1rem 0;
+}
+
+.cat-button label span {
+  text-align: center;
+  display: block;
+  background-color: var(--darkbg);
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--pop);
+  padding: 7px;
+  color: var(--text);
+  transition: box-shadow 0.3s ease-in-out 0s;
+  transition: color 0.3s ease-in-out 0s;
+  transition: background-color 0.3s ease-in-out 0s;
+}
+
+.cat-button label span:hover {
+  box-shadow: 0 0 8px var(--highlight);
+}
+
+.cat-button span svg {
+  margin: 0 2px;
+}
+
+.cat-button label input {
+  position: absolute;
+  display: none;
+  color: #fff !important;
+}
+
+.cat-button input:checked + span {
+  background-color: var(--darkbg);
+  border-radius: 0.5rem;
+  border: 1px solid var(--pop);
+  padding: 7px;
+  color: var(--text);
+}
+
+.cat-button input:not(:checked) + span {
+  background-color: var(--bg);
+  border-radius: 0.5rem;
+  border: none;
+  padding: 8px;
+  color: var(--text);
 }

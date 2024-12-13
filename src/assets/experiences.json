@@ -1,0 +1,99 @@
+[
+  {
+    "id": 9,
+    "company": "EY-Parthenon",
+    "role": "Associate - Software Strategy Group",
+    "logo": "eyp",
+    "startDate": "2024-02-02",
+    "endDate": "2025-02-02",
+    "link": "https://www.ey.com/en_us/services/strategy/software-strategy-consulting",
+    "skills": ["Python", "PowerBI", "Microsoft Excel"]
+  },
+  {
+    "id": 8,
+    "company": "Inspirit AI",
+    "role": "Instructor",
+    "logo": "inspiritai",
+    "startDate": "2023-07",
+    "endDate": "2024-01",
+    "link": "https://www.inspiritai.com/",
+    "skills": ["Python", "TensorFlow"]
+  },
+  {
+    "id": 7,
+    "company": "Brown Space Engineering",
+    "role": "Ground Software Lead",
+    "logo": "bse",
+    "startDate": "2020-09",
+    "endDate": "2023-05",
+    "link": "https://www.brownspace.io/",
+    "skills": ["React"]
+  },
+  {
+    "id": 6,
+    "company": "William Blair",
+    "role": "Investment Banking Summer Analyst",
+    "logo": "wb",
+    "startDate": "2022-06",
+    "endDate": "2022-08",
+    "link": "https://www.williamblair.com/",
+    "skills": ["Microsoft Excel"]
+  },
+  {
+    "id": 5,
+    "company": "AiGoLearning",
+    "role": "Teacher",
+    "logo": "aigo",
+    "startDate": "2020-07",
+    "endDate": "2022-01",
+    "link": "https://aigolearning.org/",
+    "skills": ["Teaching"]
+  },
+  {
+    "id": 4,
+    "company": "Brown University",
+    "role": "Head Teaching Assistant",
+    "logo": "brown",
+    "startDate": "2021-03",
+    "endDate": "2021-12",
+    "link": "https://cs.brown.edu/courses/cs019/2021/staff.html",
+    "skills": ["Teaching"]
+  },
+  {
+    "id": 3,
+    "company": "Juni Learning",
+    "role": "Instructor",
+    "logo": "juni",
+    "startDate": "2021-01",
+    "endDate": "2021-04",
+    "link": "https://junilearning.com/",
+    "skills": ["Teaching"]
+  },
+  {
+    "id": 2,
+    "company": "Play Gameworks",
+    "role": "Full Stack Engineer",
+    "logo": "playgameworks",
+    "startDate": "2020-12",
+    "endDate": "2021-01",
+    "link": "https://www.linkedin.com/company/playgameworks/about/",
+    "skills": ["React", "Figma", "Javascript"]
+  },
+  {
+    "id": 1,
+    "company": "Brown University",
+    "role": "Student",
+    "logo": "brown",
+    "startDate": "2019-09",
+    "endDate": "2023-05",
+    "link": "https://www.brown.edu/",
+    "skills": [
+      "Python",
+      "Microsoft Excel",
+      "React",
+      "TensorFlow",
+      "Javascript",
+      "Figma"
+    ]
+  }
+]
