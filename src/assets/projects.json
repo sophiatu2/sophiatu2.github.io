@@ -1,0 +1,73 @@
+[
+  {
+    "title": "Brown Space Engineering PVDX App",
+    "img": "pvdxScreenshot",
+    "link": "https://github.com/BrownSpaceEngineering/pvdx_webapp",
+    "desc": "pvdx_desc",
+    "skills": ["React", "TypeScript", "Figma", "Product Management"],
+    "year": 2023,
+    "other": "none"
+  },
+  {
+    "title": "Bread",
+    "img": "bread",
+    "link": "https://github.com/sophiatu2/bread",
+    "desc": "bread_desc",
+    "skills": ["Python", "Flask"],
+    "year": 2024,
+    "other": "none"
+  },
+  {
+    "title": "Gesture Control System",
+    "img": "television",
+    "link": "https://github.com/sophiatu2/television",
+    "desc": "television_desc",
+    "skills": [
+      "Python",
+      "TensorFlow",
+      "Keras",
+      "Google Cloud Platform",
+      "OpenCV",
+      "CNNs",
+      "AI/ML"
+    ],
+    "other": "television_other",
+    "year": 2021
+  },
+  {
+    "title": "Food Classification",
+    "img": "food",
+    "link": "https://github.com/meera-kurup/skimage",
+    "desc": "food_desc",
+    "skills": ["Python", "TensorFlow", "Keras", "CNNs", "AI/ML"],
+    "other": "food_other",
+    "year": 2022
+  },
+  {
+    "title": "Responsive Redesign",
+    "img": "redesignScreenshot",
+    "link": "https://github.com/sophiatu2/CS1300-Responsive-Redesign",
+    "desc": "redesign_desc",
+    "skills": ["React", "Figma", "Balsamiq", "UI/UX"],
+    "other": "redesign_other",
+    "year": 2022
+  },
+  {
+    "title": "Iterative Design",
+    "img": "iterativeScreenshot",
+    "link": "https://github.com/jumpylemur431/iterative-design",
+    "desc": "iterative_desc",
+    "skills": ["Figma", "Balsamiq", "UI/UX"],
+    "other": "iterative_other",
+    "year": 2022
+  },
+  {
+    "title": "Development",
+    "img": "devScreenshot",
+    "link": "https://github.com/sophiatu2/development",
+    "desc": "dev_desc",
+    "skills": ["React", "Javascript", "UI/UX"],
+    "other": "dev_other",
+    "year": 2022
+  }
+]

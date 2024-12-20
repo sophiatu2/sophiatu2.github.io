@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { AiFillCaretDown } from "react-icons/ai";
 import TimelineCard from "./TimelineCard";
-import Filters from "./Filters";
+import TimelineFilter from "./TimelineFilter";
 
 // Logos
 import eyp from "../assets/logos/eyp.png";
@@ -39,7 +39,7 @@ function Timeline() {
       <div>
         Filter / Sort <AiFillCaretDown />
       </div>
-      <Filters data={experiences} setFilteredItems={setFilteredItems} />
+      <TimelineFilter data={experiences} setFilteredItems={setFilteredItems} />
       <div className="timeline">
         {filteredItems.map((item, index) => (
           <TimelineCard key={index} item={item} />

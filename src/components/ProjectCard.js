@@ -1,30 +1,37 @@
 import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 
-function Card({ title, img, link, desc, skills, other }) {
+function ProjectCard({ item }) {
+  const skillsList = item.skills.join(", ");
+
   return (
-    <a className="link-wrapper" href={link} target="_blank" rel="noreferrer">
+    <a
+      className="link-wrapper"
+      href={item.link}
+      target="_blank"
+      rel="noreferrer"
+    >
       <div className="project-card">
-        <img src={img} alt={"Project screenshot"} />
+        <img src={item.img} alt={"Project screenshot"} />
         <div className="project-card-content">
-          <h3>{title}</h3>
-          {desc}
+          <h3>{item.title}</h3>
+          {item.desc}
           <p>
-            <b>Skills:</b> {skills}
+            <b>Skills:</b> {skillsList}
           </p>
           <button
             className="custom-button"
-            href={link}
+            href={item.link}
             target="_blank"
             rel="noreferrer"
           >
             <AiFillGithub /> See on github
           </button>
-          {other}
+          {item.other}
         </div>
       </div>
     </a>
   );
 }
 
-export default Card;
+export default ProjectCard;
