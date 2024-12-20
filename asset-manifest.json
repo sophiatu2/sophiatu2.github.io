@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.9940985f.chunk.css",
-    "main.js": "/static/js/main.8113016e.chunk.js",
-    "main.js.map": "/static/js/main.8113016e.chunk.js.map",
+    "main.js": "/static/js/main.97fdc2a0.chunk.js",
+    "main.js.map": "/static/js/main.97fdc2a0.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3388f3cb.js",
     "runtime-main.js.map": "/static/js/runtime-main.3388f3cb.js.map",
     "static/css/2.88761f2b.chunk.css": "/static/css/2.88761f2b.chunk.css",
-    "static/js/2.7292dfd4.chunk.js": "/static/js/2.7292dfd4.chunk.js",
-    "static/js/2.7292dfd4.chunk.js.map": "/static/js/2.7292dfd4.chunk.js.map",
+    "static/js/2.d9c97c3d.chunk.js": "/static/js/2.d9c97c3d.chunk.js",
+    "static/js/2.d9c97c3d.chunk.js.map": "/static/js/2.d9c97c3d.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.88761f2b.chunk.css.map": "/static/css/2.88761f2b.chunk.css.map",
     "static/css/main.9940985f.chunk.css.map": "/static/css/main.9940985f.chunk.css.map",
-    "static/js/2.7292dfd4.chunk.js.LICENSE.txt": "/static/js/2.7292dfd4.chunk.js.LICENSE.txt",
+    "static/js/2.d9c97c3d.chunk.js.LICENSE.txt": "/static/js/2.d9c97c3d.chunk.js.LICENSE.txt",
     "static/media/200304 procrastination.2a89ef95.png": "/static/media/200304 procrastination.2a89ef95.png",
     "static/media/200629 Luci -- Watercolor.e6f1354c.png": "/static/media/200629 Luci -- Watercolor.e6f1354c.png",
     "static/media/200701 Bonnie -- Watercolor.6e325832.png": "/static/media/200701 Bonnie -- Watercolor.6e325832.png",
@@ -30,6 +30,7 @@
     "static/media/Phone Dollhouse 2018 -- Acrylic on Cardboard and Transparent Film with Air-dry Clay -- 9in x 18in.4efa7961.jpeg": "/static/media/Phone Dollhouse 2018 -- Acrylic on Cardboard and Transparent Film with Air-dry Clay -- 9in x 18in.4efa7961.jpeg",
     "static/media/Self Reflection 2018 -- Pastel on Paper -- 19in x 24in.bc0a079c.jpg": "/static/media/Self Reflection 2018 -- Pastel on Paper -- 19in x 24in.bc0a079c.jpg",
     "static/media/aigo.0513cad5.png": "/static/media/aigo.0513cad5.png",
+    "static/media/bread.c223d8b1.png": "/static/media/bread.c223d8b1.png",
     "static/media/brown.e2ee5f81.png": "/static/media/brown.e2ee5f81.png",
     "static/media/bse.3b3f8d63.png": "/static/media/bse.3b3f8d63.png",
     "static/media/development-screenshot.02601b3c.png": "/static/media/development-screenshot.02601b3c.png",
@@ -51,8 +52,8 @@
   "entrypoints": [
     "static/js/runtime-main.3388f3cb.js",
     "static/css/2.88761f2b.chunk.css",
-    "static/js/2.7292dfd4.chunk.js",
+    "static/js/2.d9c97c3d.chunk.js",
     "static/css/main.9940985f.chunk.css",
-    "static/js/main.8113016e.chunk.js"
+    "static/js/main.97fdc2a0.chunk.js"
   ]
 }
