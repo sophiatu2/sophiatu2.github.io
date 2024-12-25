@@ -23,8 +23,8 @@ export default function TimelineFilter({ data, setFilteredItems }) {
     { label: "Duration", value: "duration" },
   ];
 
-  const [sortBy, setSortBy] = useState("startyear");
-  const [sortOrder, setSortOrder] = useState("asc");
+  const [sortBy, setSortBy] = useState("endyear");
+  const [sortOrder, setSortOrder] = useState("desc");
 
   const sortByMethod = (filteredData, sortOrder) => {
     // Sorting by start year

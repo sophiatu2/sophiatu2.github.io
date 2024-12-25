@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import Filter from "./Filter";
 import { FaReact, FaPython } from "react-icons/fa";
 import { FaChalkboardUser } from "react-icons/fa6";
@@ -37,6 +38,8 @@ export default function ProjectFilter({ data, setFilteredItems }) {
 
   const defaultFilters = categoriesArr.map((li) => li.name);
   const defaultChecked = categoriesArr.map((li) => li.id);
+  const [sortBy, setSortBy] = useState(sortByOptions[0]?.value || "default");
+  const [sortOrder, setSortOrder] = useState("desc");
 
   return (
     <Filter
@@ -47,6 +50,10 @@ export default function ProjectFilter({ data, setFilteredItems }) {
       defaultChecked={defaultChecked}
       sortByOptions={sortByOptions}
       sortByMethod={sortByMethod}
+      sortBy={sortBy}
+      setSortBy={setSortBy}
+      sortOrder={sortOrder}
+      setSortOrder={setSortOrder}
     />
   );
 }

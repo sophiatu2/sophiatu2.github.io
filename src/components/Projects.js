@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import { AiOutlineDownload } from "react-icons/ai";
-import { AiFillCaretDown } from "react-icons/ai";
 import ProjectFilter from "./ProjectFilter";
 import ProjectCard from "./ProjectCard";
 import foxBlob from "../assets/foxblob.gif";
@@ -236,15 +235,10 @@ function Projects() {
       <Container className="display">
         <img src={foxBlob} alt="fox blob gif" width="320px" />
         <h2>My Work</h2>
-        <div>
-          Filter / Sort <AiFillCaretDown />
-        </div>
         <ProjectFilter data={projects} setFilteredItems={setFilteredItems} />
-        <div className="timeline">
-          {filteredItems.map((project, index) => (
-            <ProjectCard key={index} item={project} />
-          ))}
-        </div>
+        {filteredItems.map((project, index) => (
+          <ProjectCard key={index} item={project} />
+        ))}
         {/* <ProjectCard
           title="Brown Space Engineering PVDX App"
           img={pvdxScreenshot}

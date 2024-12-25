@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { AiFillCaretDown } from "react-icons/ai";
 
 export default function Filter({
   data,
@@ -8,12 +9,13 @@ export default function Filter({
   defaultChecked,
   sortByOptions,
   sortByMethod,
-  sortOrderMethod,
+  sortBy,
+  setSortBy,
+  sortOrder,
+  setSortOrder,
 }) {
   const [currFilters, setFilters] = useState(defaultFilters);
   const [isChecked, setIsChecked] = useState(defaultChecked);
-  const [sortBy, setSortBy] = useState(sortByOptions[0]?.value || "default");
-  const [sortOrder, setSortOrder] = useState("desc");
 
   // Handles changes in filter categories
   const changeFilters = (event, item) => {
@@ -80,6 +82,9 @@ export default function Filter({
 
   return (
     <div className="filters">
+      <div style={{ marginTop: "1rem" }}>
+        Filter / Sort <AiFillCaretDown />
+      </div>
       <form>
         <div className="buttons-container">
           {categoriesArr.map((item) => (
