@@ -45,7 +45,7 @@ function About() {
         </Col>
       </Row>
       <h1>Experience</h1>
-      <button
+      <a
         className="custom-button"
         style={{ marginBottom: "0" }}
         href={pdf}
@@ -53,7 +53,7 @@ function About() {
       >
         <AiOutlineDownload />
         &nbsp;Download Resume
-      </button>
+      </a>
       <Row className="about-section">
         <Timeline />
       </Row>
